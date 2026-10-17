@@ -1,0 +1,48 @@
+{
+  "name": "@local/dsh-seeit-video",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "通过 Seeit 为 DSH 提供视频处理、总结与证据问答工具。",
+  "exports": {
+    ".": "./src/index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "files": [
+    "src",
+    "locale",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "@deepseek-ai/schemastery": "3.18.4"
+  },
+  "dependencies": {
+    "@local/dsh-bilibili": "github:AsakuraAOI/dsh-bilibili#v0.1.0"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.js"
+  },
+  "devDependencies": {
+    "@deepseek-ai/schemastery": "^3.18.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AsakuraAOI/dsh-seeit-video.git"
+  },
+  "homepage": "https://github.com/AsakuraAOI/dsh-seeit-video#readme",
+  "bugs": {
+    "url": "https://github.com/AsakuraAOI/dsh-seeit-video/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness"
+  ]
+}

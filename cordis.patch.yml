@@ -1,0 +1,15 @@
+- insert:
+    - id: seeit-video
+      name: '@local/dsh-seeit-video'
+      config:
+        seeitRoot: C:/Users/14506/Desktop/Seeit
+        dataDir: C:/Users/14506/Desktop/Seeit/data
+        dshBaseUrl: https://api.asakuraaoi.cn/v1
+        dshApiKeyRef: HIAGENT_API_KEY
+        dshJsonMode: false
+        asrBaseUrl: https://api.siliconflow.cn/v1
+        asrModel: XingChenAGI/XingChenGSR-V1.0
+        asrApiKeyRef: SILICONFLOW_API_KEY
+        seeitConfigPath: C:/Users/14506/Desktop/Seeit/seeit.config.json
+        ffmpegPath: 'C:/Program Files/ffmpeg-9.0.2-essentials_build/bin/ffmpeg.exe'
+        ffprobePath: 'C:/Program Files/ffmpeg-9.0.2-essentials_build/bin/ffprobe.exe'
